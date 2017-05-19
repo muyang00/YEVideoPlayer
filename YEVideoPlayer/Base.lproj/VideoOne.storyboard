@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="kMn-R8-tQr">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ItemOne-->
+        <scene sceneID="pJc-g8-8t9">
+            <objects>
+                <navigationController id="kMn-R8-tQr" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="ItemOne" id="Fso-Pt-geT"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="BLy-Nh-ldY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Q3b-RQ-Vsf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SdU-ev-rGP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-809" y="61"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hJu-5l-qdf">
+                                <rect key="frame" x="137.5" y="468" width="100" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.55062081600000001" blue="0.1155784626" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="9es-Oz-tpi"/>
+                                    <constraint firstAttribute="width" constant="100" id="HLv-Ro-Bfp"/>
+                                </constraints>
+                                <state key="normal" title="Play"/>
+                                <state key="selected" title="停止"/>
+                                <connections>
+                                    <action selector="playerAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T62-u5-cM9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hJu-5l-qdf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3Ui-rk-TvC"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hJu-5l-qdf" secondAttribute="bottom" constant="100" id="wD0-Pz-heY"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="XFo-xZ-CXK">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="Mzs-Ot-bUG">
+                            <connections>
+                                <segue destination="sMt-0W-rlN" kind="push" id="98X-GD-QNf"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="playBtn" destination="hJu-5l-qdf" id="uX4-FU-OOa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23.199999999999999" y="70.614692653673174"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="BMx-Pr-rvE">
+            <objects>
+                <viewController id="sMt-0W-rlN" customClass="YE_MPViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jNm-aB-PCI"/>
+                        <viewControllerLayoutGuide type="bottom" id="aCa-C9-P0D"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Frv-Fq-SpO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QWA-ca-7dE">
+                                <rect key="frame" x="137.5" y="308.5" width="100" height="50"/>
+                                <color key="backgroundColor" red="0.91037654109999999" green="0.60651292690000003" blue="0.30912058019999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Jqd-NP-GBj"/>
+                                    <constraint firstAttribute="width" constant="100" id="R0j-vF-0cI"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="playerClick:" destination="sMt-0W-rlN" eventType="touchUpInside" id="ELd-Ib-05L"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QWA-ca-7dE" firstAttribute="centerY" secondItem="Frv-Fq-SpO" secondAttribute="centerY" id="VZ4-bA-KlT"/>
+                            <constraint firstItem="QWA-ca-7dE" firstAttribute="centerX" secondItem="Frv-Fq-SpO" secondAttribute="centerX" id="ihM-cu-v4O"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="FHN-Ri-fR4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Drf-L5-Q2Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="864.79999999999995" y="70.614692653673174"/>
+        </scene>
+    </scenes>
+</document>
