@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="233" id="KGk-i7-Jjw" customClass="YEVideoCell">
+            <rect key="frame" x="0.0" y="0.0" width="368" height="233"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="368" height="233"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default_photo.png" translatesAutoresizingMaskIntoConstraints="NO" id="OO7-55-Jyb">
+                        <rect key="frame" x="0.0" y="0.0" width="368" height="183"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="play" translatesAutoresizingMaskIntoConstraints="NO" id="W22-1O-E9G">
+                        <rect key="frame" x="159" y="67" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="iDH-7B-Lij"/>
+                            <constraint firstAttribute="height" constant="50" id="vjo-4r-y8Y"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="这里是iOS学习开发者" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MOs-28-SCa">
+                        <rect key="frame" x="28" y="188" width="166" height="31"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="MOs-28-SCa" secondAttribute="bottom" constant="5" id="1Of-3q-xMr"/>
+                    <constraint firstItem="MOs-28-SCa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="3oI-fz-6Pb"/>
+                    <constraint firstItem="MOs-28-SCa" firstAttribute="top" secondItem="OO7-55-Jyb" secondAttribute="bottom" constant="5" id="5cW-CO-jKK"/>
+                    <constraint firstItem="OO7-55-Jyb" firstAttribute="centerY" secondItem="W22-1O-E9G" secondAttribute="centerY" id="EkM-eq-7Si"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="OO7-55-Jyb" secondAttribute="bottom" constant="41.5" id="KjU-9c-DNf"/>
+                    <constraint firstAttribute="trailing" secondItem="OO7-55-Jyb" secondAttribute="trailing" id="NFz-p3-ekn"/>
+                    <constraint firstItem="OO7-55-Jyb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="dJ9-Dz-MVY"/>
+                    <constraint firstItem="W22-1O-E9G" firstAttribute="centerX" secondItem="OO7-55-Jyb" secondAttribute="centerX" id="klp-dr-hmJ"/>
+                    <constraint firstItem="OO7-55-Jyb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="nDY-2n-fTS"/>
+                    <constraint firstItem="W22-1O-E9G" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="uuM-vh-clJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="videoImageView" destination="OO7-55-Jyb" id="P2m-6C-vVf"/>
+                <outlet property="videoTitle" destination="MOs-28-SCa" id="rMg-sq-3Md"/>
+            </connections>
+            <point key="canvasLocation" x="-10" y="5.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="default_photo.png" width="326" height="326"/>
+        <image name="play" width="16" height="16"/>
+    </resources>
+</document>

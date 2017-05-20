@@ -8,6 +8,8 @@
 
 #import "StyleFourViewController.h"
 #import <AVFoundation/AVFoundation.h>
+#import "YEVideoItem.h"
+#import "YEVideoCell.h"
 
 @interface StyleFourViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -37,7 +39,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    YEVideoCell *cell = [YEVideoCell videoCellWithTableView:tableView];
     
 
     
