@@ -14,7 +14,7 @@
 @interface StyleFourViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-
+@property (nonatomic, strong) UIWindow *keyWindow;
 
 @end
 
@@ -51,6 +51,10 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSLog(@"indexPath --- %@", indexPath);
+    [UIView animateWithDuration:0.3 animations:^{
+        self.view.transform = CGAffineTransformMakeRotation( -M_PI / 2);
+    
+    }];
 }
 
 - (void)setupUI {
