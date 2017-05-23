@@ -477,8 +477,8 @@ static CGFloat const playBtnSideLength = 60.0f;
     [UIView animateWithDuration:0.3 animations:^{
         
         CGFloat w = self.playerOriginalFrame.size.width * 0.5;
-        CGFloat h = self.playerOriginalFrame.size.height * 0.5;
-        CGRect smallFrame = CGRectMake(tableViewframe.origin.x + tableViewframe.size.width - w, tableViewframe.origin.y + tableViewframe.size.height - h, w, h);
+        CGFloat h = self.playerOriginalFrame.size.height * 0.7;
+        CGRect smallFrame = CGRectMake(tableViewframe.origin.x + tableViewframe.size.width - w, tableViewframe.origin.y + tableViewframe.size.height - h - 60, w, h);
         self.frame = smallFrame;
         self.playerLayer.frame = self.bounds;
         self.activityIndicatorView.center = CGPointMake(w / 2.0, h / 2.0);
@@ -568,6 +568,7 @@ static CGFloat const playBtnSideLength = 60.0f;
         label1.text = @"00:00:00";
         label1.font = [UIFont systemFontOfSize:12.0f];
         label1.textColor = [UIColor whiteColor];
+        label1.backgroundColor = [UIColor redColor];
         [_bottomBar addSubview:label1];
         self.progressLabel = label1;
         
@@ -602,7 +603,7 @@ static CGFloat const playBtnSideLength = 60.0f;
         label2.textColor = [UIColor whiteColor];
         [_bottomBar addSubview:label2];
         self.totalDurationLabel = label2;
-        
+        label2.backgroundColor = [UIColor orangeColor];
         NSLayoutConstraint *label2Right = [NSLayoutConstraint constraintWithItem:label2 attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:fullScreenBtn attribute:NSLayoutAttributeLeft multiplier:1.0f constant:0];
         NSLayoutConstraint *label2Top = [NSLayoutConstraint constraintWithItem:label2 attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:_bottomBar attribute:NSLayoutAttributeTop multiplier:1.0f constant:0];
         NSLayoutConstraint *label2Bottom = [NSLayoutConstraint constraintWithItem:label2 attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:_bottomBar attribute:NSLayoutAttributeBottom multiplier:1.0f constant:0];
