@@ -62,9 +62,9 @@ static CGFloat panDistance;
     CGPathAddEllipseInRect(pointPath, nil, CGRectMake(panDistance, self.centerY - (self.sliderDiameter / 2), self.sliderDiameter, self.sliderDiameter));
     CGContextSetFillColorWithColor(ctx, self.sliderColor.CGColor);
     CGContextAddPath(ctx, pointPath);
-    CGPathCloseSubpath(minPath);
+    CGPathCloseSubpath(pointPath);
     CGContextFillPath(ctx);
-    CGPathRelease(minPath);
+    CGPathRelease(pointPath);
     
 }
 

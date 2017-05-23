@@ -20,7 +20,7 @@ typedef void (^VideoCompletedPlayingBlock) (YEVideoPlayerFour *videoPlayer);
 
 - (void)playPause;
 
-- (void)destoryPlayer;
+- (void)destroyPlayer;
 
 //在cell 上播放必须绑定TableView， 当前播放cell的IndexPath
 - (void)playerBindTableView:(UITableView *)bindTableView currentIndexPath:(NSIndexPath *)currentIndexPath;

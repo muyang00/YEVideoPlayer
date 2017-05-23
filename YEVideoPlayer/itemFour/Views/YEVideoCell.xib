@@ -19,7 +19,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="368" height="233"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default_photo.png" translatesAutoresizingMaskIntoConstraints="NO" id="OO7-55-Jyb">
+                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default_photo.png" translatesAutoresizingMaskIntoConstraints="NO" id="OO7-55-Jyb">
                         <rect key="frame" x="0.0" y="0.0" width="368" height="183"/>
                     </imageView>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="play" translatesAutoresizingMaskIntoConstraints="NO" id="W22-1O-E9G">
@@ -29,14 +29,15 @@
                             <constraint firstAttribute="height" constant="50" id="vjo-4r-y8Y"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="这里是iOS学习开发者" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MOs-28-SCa">
-                        <rect key="frame" x="28" y="188" width="166" height="31"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="这里是iOS学习开发者" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MOs-28-SCa">
+                        <rect key="frame" x="28" y="188" width="312" height="31"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="MOs-28-SCa" secondAttribute="trailing" constant="20" id="0wM-92-Jb7"/>
                     <constraint firstAttribute="bottomMargin" secondItem="MOs-28-SCa" secondAttribute="bottom" constant="5" id="1Of-3q-xMr"/>
                     <constraint firstItem="MOs-28-SCa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="3oI-fz-6Pb"/>
                     <constraint firstItem="MOs-28-SCa" firstAttribute="top" secondItem="OO7-55-Jyb" secondAttribute="bottom" constant="5" id="5cW-CO-jKK"/>
@@ -58,6 +59,6 @@
     </objects>
     <resources>
         <image name="default_photo.png" width="326" height="326"/>
-        <image name="play" width="16" height="16"/>
+        <image name="play" width="60" height="60"/>
     </resources>
 </document>

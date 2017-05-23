@@ -36,6 +36,7 @@
 		B4C5C0A91ECC3DCC000A28BE /* YE_MPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C5C0A81ECC3DCC000A28BE /* YE_MPViewController.m */; };
 		B4C5C0AF1ECC4B7B000A28BE /* YEVideoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C5C0AE1ECC4B7B000A28BE /* YEVideoPlayer.m */; };
 		B4C5C0B21ECC4B97000A28BE /* StyleThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C5C0B11ECC4B97000A28BE /* StyleThreeViewController.m */; };
+		B4DCA5231ED3F8AA004A20C7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4DCA5221ED3F8AA004A20C7 /* AVFoundation.framework */; };
 		B4E4814F1ECE91740096F03A /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E480EE1ECE91740096F03A /* AFHTTPRequestOperation.m */; };
 		B4E481501ECE91740096F03A /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E480F01ECE91740096F03A /* AFHTTPRequestOperationManager.m */; };
 		B4E481511ECE91740096F03A /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E480F21ECE91740096F03A /* AFHTTPSessionManager.m */; };
@@ -154,6 +155,8 @@
 		B4C5C0AE1ECC4B7B000A28BE /* YEVideoPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YEVideoPlayer.m; sourceTree = "<group>"; };
 		B4C5C0B01ECC4B97000A28BE /* StyleThreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StyleThreeViewController.h; sourceTree = "<group>"; };
 		B4C5C0B11ECC4B97000A28BE /* StyleThreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StyleThreeViewController.m; sourceTree = "<group>"; };
+		B4DCA5221ED3F8AA004A20C7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B4DCA5241ED3F8B1004A20C7 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		B4E480ED1ECE91740096F03A /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
 		B4E480EE1ECE91740096F03A /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
 		B4E480EF1ECE91740096F03A /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
@@ -261,6 +264,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4DCA5231ED3F8AA004A20C7 /* AVFoundation.framework in Frameworks */,
 				B4C5C05E1ECC2CD0000A28BE /* MediaPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +418,8 @@
 		B4C5C05C1ECC2CD0000A28BE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B4DCA5241ED3F8B1004A20C7 /* AVKit.framework */,
+				B4DCA5221ED3F8AA004A20C7 /* AVFoundation.framework */,
 				B4C5C05D1ECC2CD0000A28BE /* MediaPlayer.framework */,
 			);
 			name = Frameworks;
