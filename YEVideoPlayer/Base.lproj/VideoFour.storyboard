@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -51,7 +52,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="jnu-HY-ECN"/>
+                    <navigationItem key="navigationItem" id="jnu-HY-ECN">
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="biL-SG-q1S">
+                            <connections>
+                                <segue destination="myj-ee-qY9" kind="push" id="Ddo-KA-Nzc"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="aTs-1s-gQI" id="ks1-Xj-hMU"/>
                     </connections>
@@ -59,6 +66,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0ar-wU-3fu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-572" y="-149"/>
+        </scene>
+        <!--Player View Controller-->
+        <scene sceneID="lv8-Gw-RPa">
+            <objects>
+                <viewController id="myj-ee-qY9" customClass="IJKPlayer_ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="761-dx-VGz"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ifn-Ed-e3c"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="osr-14-1jq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5sS-wJ-31u">
+                                <rect key="frame" x="116" y="511" width="114" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="WGb-Ny-J3i"/>
+                                    <constraint firstAttribute="width" constant="114" id="jPt-80-PmZ"/>
+                                </constraints>
+                                <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="playerBtn:" destination="myj-ee-qY9" eventType="touchUpInside" id="oCB-2c-aYv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ifn-Ed-e3c" firstAttribute="top" secondItem="5sS-wJ-31u" secondAttribute="bottom" constant="72" id="2oc-7c-Q2V"/>
+                            <constraint firstItem="5sS-wJ-31u" firstAttribute="leading" secondItem="osr-14-1jq" secondAttribute="leadingMargin" constant="100" id="a6o-YP-Yhh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="8mo-T5-qb6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="24C-VQ-PEm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="157.59999999999999" y="-136.28185907046478"/>
         </scene>
     </scenes>
 </document>

@@ -31,6 +31,8 @@
 		B46470011ECD84F2009634B3 /* shortvideo_button_close@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B4646FFD1ECD84F2009634B3 /* shortvideo_button_close@3x.png */; };
 		B46470041ECD9DB7009634B3 /* YE_AVPLayerNextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B46470031ECD9DB7009634B3 /* YE_AVPLayerNextViewController.m */; };
 		B46470061ECDA89D009634B3 /* playerImages.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B46470051ECDA89D009634B3 /* playerImages.bundle */; };
+		B4B46AA61ED806C30060C871 /* IJKPlayer_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4B46AA51ED806C30060C871 /* IJKPlayer_ViewController.m */; };
+		B4B46AAA1ED807D60060C871 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B46AA91ED807D60060C871 /* libz.tbd */; };
 		B4C5C05E1ECC2CD0000A28BE /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4C5C05D1ECC2CD0000A28BE /* MediaPlayer.framework */; };
 		B4C5C0A61ECC3D30000A28BE /* StyleTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C5C0A51ECC3D30000A28BE /* StyleTwoViewController.m */; };
 		B4C5C0A91ECC3DCC000A28BE /* YE_MPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C5C0A81ECC3DCC000A28BE /* YE_MPViewController.m */; };
@@ -146,6 +148,9 @@
 		B46470021ECD9DB7009634B3 /* YE_AVPLayerNextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YE_AVPLayerNextViewController.h; sourceTree = "<group>"; };
 		B46470031ECD9DB7009634B3 /* YE_AVPLayerNextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YE_AVPLayerNextViewController.m; sourceTree = "<group>"; };
 		B46470051ECDA89D009634B3 /* playerImages.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = playerImages.bundle; sourceTree = "<group>"; };
+		B4B46AA41ED806C30060C871 /* IJKPlayer_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IJKPlayer_ViewController.h; sourceTree = "<group>"; };
+		B4B46AA51ED806C30060C871 /* IJKPlayer_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IJKPlayer_ViewController.m; sourceTree = "<group>"; };
+		B4B46AA91ED807D60060C871 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		B4C5C05D1ECC2CD0000A28BE /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		B4C5C0A41ECC3D30000A28BE /* StyleTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StyleTwoViewController.h; path = ../StyleTwoViewController.h; sourceTree = "<group>"; };
 		B4C5C0A51ECC3D30000A28BE /* StyleTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StyleTwoViewController.m; path = ../StyleTwoViewController.m; sourceTree = "<group>"; };
@@ -264,6 +269,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4B46AAA1ED807D60060C871 /* libz.tbd in Frameworks */,
 				B4DCA5231ED3F8AA004A20C7 /* AVFoundation.framework in Frameworks */,
 				B4C5C05E1ECC2CD0000A28BE /* MediaPlayer.framework in Frameworks */,
 			);
@@ -381,6 +387,8 @@
 				B4646FF71ECD3746009634B3 /* StyleFourViewController.m */,
 				B4E481861ECE94430096F03A /* VideoDetailViewController.h */,
 				B4E481871ECE94430096F03A /* VideoDetailViewController.m */,
+				B4B46AA41ED806C30060C871 /* IJKPlayer_ViewController.h */,
+				B4B46AA51ED806C30060C871 /* IJKPlayer_ViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -418,6 +426,7 @@
 		B4C5C05C1ECC2CD0000A28BE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B4B46AA91ED807D60060C871 /* libz.tbd */,
 				B4DCA5241ED3F8B1004A20C7 /* AVKit.framework */,
 				B4DCA5221ED3F8AA004A20C7 /* AVFoundation.framework */,
 				B4C5C05D1ECC2CD0000A28BE /* MediaPlayer.framework */,
@@ -807,6 +816,7 @@
 				B4E481521ECE91740096F03A /* AFNetworkReachabilityManager.m in Sources */,
 				B4E481701ECE91740096F03A /* UIImageView+WebCache.m in Sources */,
 				B4C5C0A61ECC3D30000A28BE /* StyleTwoViewController.m in Sources */,
+				B4B46AA61ED806C30060C871 /* IJKPlayer_ViewController.m in Sources */,
 				B46470041ECD9DB7009634B3 /* YE_AVPLayerNextViewController.m in Sources */,
 				B4E481531ECE91740096F03A /* AFSecurityPolicy.m in Sources */,
 				B4E4815A1ECE91740096F03A /* AFNetworkActivityIndicatorManager.m in Sources */,
@@ -1006,6 +1016,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = YEVideoPlayer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1018,6 +1032,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = YEVideoPlayer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
