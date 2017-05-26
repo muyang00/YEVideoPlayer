@@ -7,7 +7,7 @@
 //
 
 #import "IJKPlayer_ViewController.h"
-#import <IJKMediaFramework/IJKMediaFramework.h>
+//#import <IJKMediaFramework/IJKMediaFramework.h>
 
 /*
  
@@ -23,7 +23,7 @@
 @interface IJKPlayer_ViewController ()
 
 @property (atomic, strong) NSURL *url;
-@property (atomic, retain) id <IJKMediaPlayback> player;
+//@property (atomic, retain) id <IJKMediaPlayback> player;
 @property (weak, nonatomic) UIView *PlayerView;
 
 @end
@@ -39,6 +39,7 @@
     //    _player = [[IJKAVMoviePlayerController alloc] initWithContentURL:self.url];
     
     //直播视频
+    /*
     self.url = [NSURL URLWithString:@"http://live.hkstv.hk.lxdns.com/live/hks/playlist.m3u8"];
     _player = [[IJKFFMoviePlayerController alloc] initWithContentURL:self.url withOptions:nil];
     
@@ -55,9 +56,10 @@
     [self.PlayerView insertSubview:playerView atIndex:1];
     [_player setScalingMode:IJKMPMovieScalingModeAspectFill];
     [self installMovieNotificationObservers];
+    */
     
 }
-
+/*
 -(void)viewWillAppear:(BOOL)animated{
     if (![self.player isPlaying]) {
         [self.player prepareToPlay];
@@ -184,5 +186,5 @@
     
 }
 
-
+*/
 @end
