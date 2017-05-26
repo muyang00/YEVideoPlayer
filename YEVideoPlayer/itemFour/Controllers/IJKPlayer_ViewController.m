@@ -9,6 +9,17 @@
 #import "IJKPlayer_ViewController.h"
 #import <IJKMediaFramework/IJKMediaFramework.h>
 
+/*
+ 
+ 打包了ijkplayer两个版本库，分别用于调试和发布(DEBUG和Release)
+ https://pan.baidu.com/s/1skOF5DV
+ 
+ 也可以顺便学习下这篇文章
+ http://www.jianshu.com/p/7b2f1df74420
+
+ 
+ */
+
 @interface IJKPlayer_ViewController ()
 
 @property (atomic, strong) NSURL *url;
